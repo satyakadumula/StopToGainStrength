@@ -1,10 +1,33 @@
 const listItems = [
-    "bdcbajbv am vajdscxscvrtfh xzXCWREre scrdvbfngh jhugy ftrdrX$ ztyst dy5r6tntfr ",
-    "jsbdcajvdabcajbbhjb jsbdcajvd  abcajbbh jbjsb dcajvdabc ajbbhjbj sbdcajvda bcajbbh jbjsb dcajvdabc ajbbhjb",
-    "bsdvfusv d dvavasdv jsbdcajv dabcajbb hjbjs  bdcajvda bcajb bhjbjsb dcajvdab cajbbhj bjsbdc ajvdabca  jbbhjb",
-    "sjdvba bvakbv kabvajsbd cajvdabcaj bbhj bjsbdcajv dabcaj bbhjb",
-    "oiisuiyu FGJWVDEF jsbdcajvd abcajbbh  jbjsb dcajvdab cajbbh jbjsbd cajvdabc ajbbhjbj sbdcajvd abcajbbh jbjsb dcajvd abcajbb hjb jsbdcaj vdabcaj bbhjb ",
-    "qlkwjeh ifahksbjvdjbj sbdcajvdab  cajbbhjbj  sbdcajv dabcaj bbhjbjs  bdcajv dabca  jbbhjb",1,2,3,3,4,4,5,5,6,7,7,90
+    "We cannot solve problems with the kind of thinking we employed when we came up with them.",
+    "The struggle doesn't define you. it transforms you into someone wiser, braver and ready for the life you deserve.",
+    "Learn as if you will live forever, live like you will die tomorrow",
+    "When was the last time you stopped to ask yourself 'Am i okay?'. Sometimes you have to make yourself happy.",
+    "Choose peace over chaos, calm your conflict",
+    "You can't undo the past, but can create a future where you don't make the same choices.",
+    "Protect your peace rather than trying to prove your point.",
+    "Prioritize your happiness and let go of anything that disturbss it.",
+    "Life feels better when you choose what truly matters.",
+    "Growth demands courage. It asks you to face your mistakes...not as failures, but as lessons.",
+    "Everyone you meet is carrying a story you can't see. So be kind.",
+    "It's just a bad day, not a bad life...",
+    "Sometimes, life has to break you, not to destroy you, but to rebuild you into someone who can withstand the storms you once feared.",
+    "Lif only gets harder when you choose the easy way out.",
+    "Stop doubting yourself, Be proud of how far you've come.",
+    "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "Success is getting what you want; happiness is wanting what you get.",
+    "How can you blame the rain for the mess it made when it was you who opened the window?. It's not about the rain.",
+    "Stop worrying about who you lose. Start caring about the people who choose you.",
+    "Stop waiting for things to happen, Start making them happen. The longer you wait, the more the life slips by.",
+    "Life is a book, some chapters are sad while some are happy but you will never know if you never turn the page.",
+    "Remember the journey to finding love isn't just about searching, it's about preparing yourself to be discovered.",
+    "Who you're striving to be now matter more than who you used to be before.",
+    "It may be dark right now and 'Hope' seems hard to be found. But remember it's your determination that will always 'Shine the brightest'.",
+    "When one door closes, another door will open. Look close...you'll find that.",
+    "Don't let the past hold your back. The future is waiting to be written. Every end is chance to a new beginning.",
+    "Success is not final, failure is not fatal. It is the courage to continue that counts.",
+    "Bad chapters can still create great stories, wrong decisions can still lead to right places, Bad experiences can still make good memories.",
+    "We lose our passion not because it fades, but because we bury it under other's expectations. Don't wear masks jsut to pretend."
 ];
 
 let quote = document.querySelector("#quote");
@@ -14,14 +37,14 @@ let intervalId;
 
 const iterator = () => {
     intervalId = setInterval(() => {
-        quote.innerHTML = listItems[currentIndex];
-        currentIndex = (currentIndex + 1) % listItems.length; // Loop back to start when at the end of the list
-    }, 100); 
+        quote.innerHTML = '<em>"'+listItems[currentIndex]+'"</em>';
+        currentIndex = (currentIndex + 1) % listItems.length; 
+    }, 150); 
 };
 
 btn.addEventListener('click', function() {
     if (btn.textContent === "Stop") {
-        btn.textContent = "For More";
+        btn.textContent = "Start";
         clearInterval(intervalId); 
     } else {
         btn.textContent = "Stop";
