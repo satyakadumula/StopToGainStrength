@@ -29,7 +29,7 @@ body {
   background-color: white;
   width: 30%;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Cookie", cursive;
   padding: 10px 0px;
   border-radius: 10px;
@@ -38,27 +38,14 @@ body {
 #myLink,a{
   color: #1a60c8;
   text-decoration: none;
+  /* font-size: 18px; */
 }
 
-.footer{
-  text-align: end;
-  color: white;
-  font-family: "Cookie", cursive;
-  align-self: flex-end;
-}
-
-.footer p{
-  text-shadow: 0 0 20px rgb(86, 82, 85);
-}
-
-.footer a{
-  box-shadow: 0 0 20px rgb(81, 81, 81);
-  font-size: 15px;
-  padding: 10px 10px;
-  border-radius: 10px;
-  margin-top: 20px;
-  text-shadow: none;
-  background-color: white;
+.header {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  font-weight: bold;
 }
 
 .container {
@@ -76,11 +63,26 @@ body {
   justify-content: space-between;
 }
 
-.header {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #4a90e2;
-  font-weight: bold;
+
+.footer{
+  text-align: end;
+  color: white;
+  font-family: "Cookie", cursive;
+  align-self: flex-end;
+  font-size: 22px;
+}
+
+.footer p{
+  text-shadow: 0 0 20px rgb(86, 82, 85);
+}
+
+.footer a{
+  box-shadow: 0 0 20px rgb(81, 81, 81);
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-shadow: none;
+  background-color: white;
 }
 
 .quotes {
@@ -118,6 +120,7 @@ body {
 
   body{
     /* border: 2px solid green; */
+    overflow-x: hidden;
   }
 
 .box{
