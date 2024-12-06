@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   /* background: linear-gradient(135deg, #1a60c8, #d8afd7); */
   /* color: #333; */
 }
@@ -27,7 +30,7 @@ body {
   width: 30%;
   text-align: center;
   font-size: 15px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Cookie", cursive;
   padding: 10px 0px;
   border-radius: 10px;
 }
@@ -40,7 +43,7 @@ body {
 .footer{
   text-align: end;
   color: white;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: "Cookie", cursive;
   align-self: flex-end;
 }
 
@@ -121,6 +124,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
   /* border: 3px solid red; */
 }
 
@@ -129,10 +133,24 @@ body {
   padding: 20px  0px;
 }  
 
+.container .header{
+  font-size: 24px;
+}
+
+.container .quotes{
+  font-size: 14px;
+  padding: 0px 20px;
+}
+
 .myprofile{
   align-self: flex-start;
   padding: 5px 5px;
 }
+
+.myprofile a, .footer a, .footer{
+  font-size: 20px;
+}
+
 
 
 }
