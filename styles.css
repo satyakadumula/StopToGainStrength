@@ -27,7 +27,7 @@ body {
 .myprofile{
   box-shadow: 0 0 20px rgb(81, 81, 81);
   background-color: white;
-  width: 30%;
+  width: 20%;
   text-align: center;
   font-size: 18px;
   font-family: "Cookie", cursive;
@@ -114,6 +114,18 @@ body {
   outline: none;
 }
 
+.footer p{
+  margin: 0;
+}
+
+.footer .instagram{
+  display: flex;
+  gap: 10px;
+}
+
+.footer a{
+  margin-top: 0;
+}
 
 @media (max-width: 600px) 
 { 
